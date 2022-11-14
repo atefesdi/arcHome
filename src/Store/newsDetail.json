@@ -1,0 +1,10 @@
+{
+  "message": "Succeed get News",
+  "content": {
+    "description": "mmmmmmm",
+    "content": "mmmmmmm",
+    "isFeatured": false,
+    "isFeaturedPriority": 7,
+    "newsPriority": 0
+  }
+}

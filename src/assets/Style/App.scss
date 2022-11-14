@@ -1,0 +1,150 @@
+@import "variables";
+
+html,
+body {
+  direction: rtl;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 32px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 28px;
+  }
+}
+
+h2 {
+  font-size: 28px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+  }
+}
+
+.container {
+  margin-left: 8.3333333333vw;
+  margin-right: 8.3333333333vw;
+  width: calc(100% - 16.6666666667vw);
+}
+
+
+
+.home-title {
+  position: absolute;
+  z-index: 3;
+  top: 3rem;
+}
+
+#home video {
+  object-fit: cover;
+}
+#home .video_backdrop {
+  background: rgba(46, 46, 46, 0.548);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+#home .video_backdrop .circle {
+  cursor: pointer;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  z-index: 3;
+  border: 2px solid #ffff;
+  border-radius: 50px;
+  top: 50%;
+  left: 50%;
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+}
+#home .video_backdrop .circle:hover {
+  opacity: 0.7;
+}
+#home .video_backdrop .triangle {
+  width: 33px;
+  height: 2px;
+  background: #ffff;
+  position: absolute;
+  top: 50%;
+  right: 40%;
+  transform: rotate(-90deg);
+}
+
+#home .video_backdrop .triangle::after,
+#home .video_backdrop .triangle::before {
+  content: "";
+  width: 33px;
+  position: absolute;
+
+  height: 2px;
+  background: #ffff;
+}
+#home .video_backdrop .triangle::after {
+  transform: rotate(60deg);
+  left: -8px;
+  top: 14px;
+}
+#home .video_backdrop .triangle::before {
+  transform: rotate(-60deg);
+  left: 8px;
+  top: 14px;
+}
+
+.link {
+  padding: 8px 16px;
+  position: relative;
+  max-width: 150px;
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 1px solid transparent;
+    transition: 0.25s;
+    transform: translateX(10px);
+  }
+
+  & > svg {
+    font-size: 20px;
+    transition: 0.25s;
+  }
+
+  &:hover {
+    &:after {
+      border: 1px solid;
+      transform: translateX(0px);
+      transition: 0.25s;
+    }
+
+    & > svg {
+      font-size: 22px;
+      margin-right: 0.75rem;
+      transition: 0.25s;
+    }
+  }
+}
+
+.statistics {
+  padding: 48px 0;
+}
+
+.statistics-item {
+  h4 {
+    margin-bottom: 12px;
+  }
+
+  svg {
+    color: $primary-color;
+    font-size: 38px;
+    margin-bottom: 12px;
+  }
+}

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("Vazir-Medium.woff2") format("woff2"),
+    url("Vazir-Medium.woff") format("woff"),
+    url("Vazir-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vazir-faNum";
+  src: url("Vazir-Medium-FD-WOL.woff2") format("woff2"),
+    url("Vazir-Medium-FD-WOL.woff") format("woff"),
+    url("Vazir-Medium-FD-WOL.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
